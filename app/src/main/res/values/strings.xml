@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MIT_usos</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="menu_moj_usos">Mój USOS</string>
+    <string name="menu_oceny">Oceny</string>
+    <string name="menu_sprawdziany">Sprawdziany</string>
+    <string name="menu_plan_zajec">Plan zajęć</string>
+    <string name="menu_kalendarz_akademicki">Kalendarz akademicki</string>
+    <string name="menu_grupy_zajeciowe">Grupy zajęciowe</string>
+    <string name="menu_ankiety">Ankiety</string>
+    <string name="menu_usosmail">USOSmail</string>
+    <string name="menu_pisma_administracyjne">Pisma administracyjne</string>
+    <string name="menu_mlegitymacja">mLegitymacja</string>
+    <string name="menu_moje_eid">Moje eID</string>
+    <string name="menu_moje_platnosci">Moje płatności</string>
+
+
+</resources>
