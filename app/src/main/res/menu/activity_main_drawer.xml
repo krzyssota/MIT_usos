@@ -10,11 +10,47 @@
             android:title="@string/menu_moj_usos" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/education"
             android:title="@string/menu_oceny" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/test"
             android:title="@string/menu_sprawdziany" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/schedule"
+            android:title="@string/menu_plan_zajec" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/calendar"
+            android:title="@string/menu_kalendarz_akademicki" />
+        <item
+            android:id="@+id/nav_groups"
+            android:icon="@drawable/group"
+            android:title="@string/menu_grupy_zajeciowe" />
+        <item
+            android:id="@+id/nav_registrations"
+            android:icon="@drawable/registrations"
+            android:title="@string/menu_rejestracje" />
+        <item
+            android:id="@+id/nav_questionnaire"
+            android:icon="@drawable/questionnaire"
+            android:title="@string/menu_ankiety" />
+        <item
+            android:id="@+id/nav_mail"
+            android:icon="@drawable/mail"
+            android:title="@string/menu_usosmail" />
+        <item
+            android:id="@+id/nav_id"
+            android:icon="@drawable/id"
+            android:title="@string/menu_mlegitymacja" />
+        <item
+            android:id="@+id/nav_eid"
+            android:icon="@drawable/eid"
+            android:title="@string/menu_moje_eid" />
+        <item
+            android:id="@+id/nav_payments"
+            android:icon="@drawable/payments"
+            android:title="@string/menu_moje_platnosci" />
     </group>
 </menu>

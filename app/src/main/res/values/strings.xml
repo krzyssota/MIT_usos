@@ -10,6 +10,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_schedule">Plan zajęć</string>
 
     <string name="menu_moj_usos">Mój USOS</string>
     <string name="menu_oceny">Oceny</string>
@@ -17,6 +18,7 @@
     <string name="menu_plan_zajec">Plan zajęć</string>
     <string name="menu_kalendarz_akademicki">Kalendarz akademicki</string>
     <string name="menu_grupy_zajeciowe">Grupy zajęciowe</string>
+    <string name="menu_rejestracje">Rejestracje</string>
     <string name="menu_ankiety">Ankiety</string>
     <string name="menu_usosmail">USOSmail</string>
     <string name="menu_pisma_administracyjne">Pisma administracyjne</string>
