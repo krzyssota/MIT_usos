@@ -13,7 +13,8 @@
         android:theme="@style/Theme.MIT_usos">
         <activity
             android:name=".Department"
-            android:exported="false" />
+            android:exported="false">
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
