@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.mit_usos.Department
 import com.example.mit_usos.R
-import com.example.mit_usos.ui.gallery.GalleryFragment
 
 class ScheduleFragment : Fragment () {
     override fun onCreateView(
@@ -17,13 +17,23 @@ class ScheduleFragment : Fragment () {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_schedule, container, false)
-        val button = view.findViewById<View>(R.id.button)
+        val mrjpButton = view.findViewById<Button>(R.id.mrjp_button)
+        val zpoButton = view.findViewById<Button>(R.id.zpo_button)
 
-        button.setOnClickListener(View.OnClickListener {
-            val intent = Intent(activity, Department::class.java)
-            startActivity(intent)
-        })
+        mrjpButton.setOnClickListener {
+            openDepartmentView(4420)
+        }
+
+        zpoButton.setOnClickListener {
+            openDepartmentView(5840)
+        }
 
         return view
+    }
+
+    private fun openDepartmentView(classNum: Int) {
+        val intent = Intent(activity, Department::class.java)
+        intent.putExtra("class", classNum)
+        startActivity(intent)
     }
 }

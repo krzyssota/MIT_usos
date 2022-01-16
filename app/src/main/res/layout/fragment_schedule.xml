@@ -8,7 +8,7 @@
     tools:context=".ui.schedule.ScheduleFragment">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/zpo_button"
         android:layout_width="351dp"
         android:layout_height="155dp"
         android:backgroundTint="#786009"
@@ -26,10 +26,10 @@
         android:text="14:15-16:00                                                         SEM-MGR"
         android:textColor="#FFFFFF"
         android:translationZ="90dp"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/zpo_button"
         app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button3" />
+        app:layout_constraintStart_toStartOf="@+id/zpo_button"
+        app:layout_constraintTop_toTopOf="@+id/zpo_button" />
 
     <TextView
         android:id="@+id/textView13"
@@ -39,9 +39,9 @@
         android:text="Zagadnienia programowania obiektowego"
         android:textColor="#FFFFFF"
         android:translationZ="90dp"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/zpo_button"
         app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/zpo_button"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
@@ -53,8 +53,8 @@
         android:text="Banacha 2, 02-097 Warszawa"
         android:textColor="#000000"
         android:translationZ="90dp"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/zpo_button"
+        app:layout_constraintStart_toStartOf="@+id/zpo_button"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
@@ -62,7 +62,7 @@
         android:layout_width="335dp"
         android:layout_height="23dp"
         android:layout_marginTop="32dp"
-        android:text="s. 5820 bud. 3320"
+        android:text="s. 5840 bud. 3320"
         android:textColor="#000000"
         android:translationZ="90dp"
         app:layout_constraintEnd_toEndOf="@+id/textView10"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView10" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/mrjp_button"
         android:layout_width="351dp"
         android:layout_height="155dp"
         android:backgroundTint="#042751"
@@ -89,9 +89,9 @@
         android:text="12:15-14:00                                                                    WYK"
         android:textColor="#FFFFFF"
         android:translationZ="90dp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="@+id/mrjp_button"
+        app:layout_constraintStart_toStartOf="@+id/mrjp_button"
+        app:layout_constraintTop_toTopOf="@+id/mrjp_button" />
 
     <TextView
         android:id="@+id/textView2"
@@ -101,9 +101,9 @@
         android:text="Metody realizacji języków programowania"
         android:textColor="#FFFFFF"
         android:translationZ="90dp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/mrjp_button"
         app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/mrjp_button"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
@@ -115,9 +115,9 @@
         android:text="Banacha 2, 02-097 Warszawa"
         android:textColor="#000000"
         android:translationZ="90dp"
-        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/mrjp_button"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/mrjp_button"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
