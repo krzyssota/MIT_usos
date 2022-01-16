@@ -17,31 +17,41 @@ import com.example.mit_usos.databinding.ActivityMainBinding
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.android.synthetic.main.activity_department.*
 import kotlinx.android.synthetic.main.activity_department.view.*
+import android.view.ScaleGestureDetector
+import android.view.MotionEvent
+import android.view.ScaleGestureDetector.SimpleOnScaleGestureListener
+
+
+
+
 
 class Department : AppCompatActivity() {
     private var currentImage = R.drawable.class4420
     private var currentFloor = "III piętro"
     private var department = true
-    private lateinit var binding: ActivityMainBinding
-
+    private var scaleGestureDetector: ScaleGestureDetector? = null
+    private var mScaleFactor = 1.0f
+    private var departmentImage: ImageView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_department)
 
-        val departmentImage = findViewById<ImageView>(R.id.department_image)
+        scaleGestureDetector = ScaleGestureDetector(this, ScaleListener())
+
+        departmentImage = findViewById<ImageView>(R.id.department_image)
         val floorView = findViewById<TextView>(R.id.floor_view)
         val changeViewButton = findViewById<Button>(R.id.change_view_button)
 
         val classNum = intent.extras?.getInt("class")
         when (classNum) {
             4420 -> {
-                departmentImage.setImageResource(R.drawable.class4420)
+                departmentImage?.setImageResource(R.drawable.class4420)
                 currentImage = R.drawable.class4420
                 floorView.text = "III piętro"
             }
             else -> {
-                departmentImage.setImageResource(R.drawable.class5840)
+                departmentImage?.setImageResource(R.drawable.class5840)
                 currentImage = R.drawable.class5840
                 floorView.text = "IV piętro"
             }
@@ -51,12 +61,12 @@ class Department : AppCompatActivity() {
 
         changeViewButton.setOnClickListener {
             if (department) {
-                departmentImage.setImageResource(R.drawable.class_view)
+                departmentImage?.setImageResource(R.drawable.class_view)
                 floorView.text = "Sala " + classNum
                 changeViewButton.text = "Widok wydziału"
                 department = false
             } else {
-                departmentImage.setImageResource(currentImage)
+                departmentImage?.setImageResource(currentImage)
                 floorView.text = currentFloor
                 changeViewButton.text = "Widok sali"
                 department = true
@@ -67,8 +77,20 @@ class Department : AppCompatActivity() {
         help.setOnClickListener{view ->
             showDialog(this@Department, classNum)
         }
+    }
 
-
+    override fun onTouchEvent(motionEvent: MotionEvent): Boolean {
+        scaleGestureDetector!!.onTouchEvent(motionEvent)
+        return true
+    }
+    private inner class ScaleListener : SimpleOnScaleGestureListener() {
+        override fun onScale(scaleGestureDetector: ScaleGestureDetector): Boolean {
+            mScaleFactor *= scaleGestureDetector.scaleFactor
+            mScaleFactor = Math.max(0.1f, Math.min(mScaleFactor, 10.0f))
+            departmentImage!!.scaleX = mScaleFactor
+            departmentImage!!.scaleY = mScaleFactor
+            return true
+        }
     }
 
     fun showDialog(activity: Activity?, classNum: Int?) {
@@ -83,8 +105,6 @@ class Department : AppCompatActivity() {
                 access2.setText("Szerokie drzwi");
             }
         }
-
-
 
 
         val callButton = dialog.findViewById(R.id.call_button) as Button
