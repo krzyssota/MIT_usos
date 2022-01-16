@@ -9,12 +9,15 @@
         <entry key="app/src/main/res/drawable/ic_menu_gallery.xml" value="0.48854166666666665" />
         <entry key="app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.48854166666666665" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.5796875" />
+        <entry key="app/src/main/res/layout/activity_help_popup_window.xml" value="0.5635416666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3375" />
         <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.3375" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.3375" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3375" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.3375" />
+        <entry key="app/src/main/res/layout/help_dialog.xml" value="0.5635416666666667" />
+        <entry key="app/src/main/res/layout/help_popup_window.xml" value="0.5635416666666667" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.3375" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.5635416666666667" />
         <entry key="app/src/main/res/menu/main.xml" value="0.5635416666666667" />
