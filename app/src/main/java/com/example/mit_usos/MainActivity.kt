@@ -8,9 +8,11 @@ import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -38,12 +40,9 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMain.toolbar)
 
         binding.appBarMain.fab.setOnClickListener { view ->
-           /* Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()*/
             showDialog(this@MainActivity)
         }
 
-        // CODE FOR SENDING AN EMAIL
 
 
 
@@ -74,25 +73,16 @@ class MainActivity : AppCompatActivity() {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCancelable(true)
         dialog.setContentView(R.layout.help_dialog)
-        //dialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-        /*val mDialogNo = dialog.findViewById<FrameLayout>(R.id.frmNo)
-        mDialogNo.setOnClickListener {
-            Toast.makeText(
-                ApplicationProvider.getApplicationContext<Context>(),
-                "Cancel",
-                Toast.LENGTH_SHORT
-            ).show()
-            dialog.dismiss()
-        }
-        val mDialogOk = dialog.findViewById<FrameLayout>(R.id.frmOk)
-        mDialogOk.setOnClickListener {
-            Toast.makeText(
-                ApplicationProvider.getApplicationContext<Context>(),
-                "Okay",
-                Toast.LENGTH_SHORT
-            ).show()
-            dialog.cancel()
-        }*/
+
+        val access = dialog.findViewById(R.id.access) as TextView
+        val access1 = dialog.findViewById(R.id.access1) as TextView
+        val access2 = dialog.findViewById(R.id.access2) as TextView
+        access.setVisibility(View.GONE) ;
+        access1.setVisibility(View.GONE) ;
+        access2.setVisibility(View.INVISIBLE) ;
+
+
+
         val callButton = dialog.findViewById(R.id.call_button) as Button
         callButton.setOnClickListener {
             val number = "225524222"
