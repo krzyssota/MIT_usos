@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MIT_usos">
         <activity
-            android:name=".HelpPopupWindow"
+            android:name=".Department"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
